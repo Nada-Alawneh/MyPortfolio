@@ -6,7 +6,7 @@ body {
 .hero-section{
 display:flex; 
 align-items:center;
-justify-content:space-between;  
+justify-content:space-around;  
 color:#fff;
 padding:50px;
 }
@@ -204,8 +204,8 @@ transform: scale(0.9);
   box-shadow: 0 6px 15px rgba(166,124,82,0.3);
 }
 .qual-icon {
-  width: 55px;       
-  height: 55px;
+  width: 90px;   
+  height: auto;    
   margin-bottom: 10px;
   display: block;
   margin-left: auto;
@@ -278,7 +278,7 @@ transform: scale(0.9);
 }
 
 .project-card {
-  flex: 1 1 45%;
+  flex: 1;
   border: 1px solid #a67c52;
   border-radius: 40px;
   background: linear-gradient(90deg, #eecba6, #d8c5b2);
@@ -287,7 +287,6 @@ transform: scale(0.9);
   font-weight: 600;
   box-shadow: 0 4px 10px rgba(166,124,82,0.2);
   transition: transform 0.3s, box-shadow 0.3s;
-  text-align: justify;
 }
 
 .project-card:hover {
@@ -1490,7 +1489,6 @@ text-align: center;
   /* contact section */
   .contact-section {
     flex-direction: column;
-    padding: 30px;
     text-align: center;
   }
 
