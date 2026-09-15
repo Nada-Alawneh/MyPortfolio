@@ -446,7 +446,7 @@ text-align: center;
 
 /* about section : */
   .About h1 {
-    font-size: 28px; 
+    font-size: 20px; 
   }
 
   .About p {
@@ -458,12 +458,15 @@ text-align: center;
 
   /* experience section */
   .Experience h1 {
-    font-size: 28px; 
+    align-items: center;
+    font-size: 20px; 
+    flex-wrap: wrap;
   }
 
   .exp-container {
     flex-direction: column;
     gap: 20px; 
+    flex-wrap: wrap;
   }
 
   .exp-card {
@@ -471,6 +474,7 @@ text-align: center;
     padding: 20px;   
     border-radius: 30px; 
     margin: 0;
+    justify-content: center;
   }
 
 .exp-card ul {
@@ -493,7 +497,8 @@ text-align: center;
 
 /* Qualifications section */
 .Qualifications h1 {
-    font-size: 28px; 
+    font-size: 15px; 
+     flex-wrap: wrap;
   }
 
   .qual-container {
@@ -503,10 +508,11 @@ text-align: center;
   }
 
   .qual-box {
-    width: 90%; 
+    width: 100%; 
     font-size: 14px; 
     padding: 20px;
     border-radius: 25px;
+    overflow:auto;
   }
 
   .qual-box h3 {
@@ -530,6 +536,7 @@ text-align: center;
 /* skills section */
 .Skills h1 {
     font-size: 28px; 
+    flex-wrap: wrap;
   }
 
   .skills-container {
@@ -543,6 +550,7 @@ text-align: center;
     font-size: 14px; 
     padding: 20px;
     border-radius: 30px;
+    overflow: auto;
   }
 
   .skill-card h2 {
@@ -563,13 +571,14 @@ text-align: center;
 
   /* projects section */
   .Projects h1 {
-    font-size: 28px; 
+    font-size: 20px; 
+    flex-wrap: wrap;
   }
 
   .projects-container {
     flex-direction: column; 
     align-items: center;
-    gap: 20px;
+    gap: 50px;
   }
 
   .project-card {
@@ -578,6 +587,7 @@ text-align: center;
     padding: 15px;
     border-radius: 20px;
     text-align: center; 
+    overflow: auto;
   }
 
   .project-card h3 {
@@ -603,7 +613,7 @@ text-align: center;
 
 /* References section */
  .References h1 {
-    font-size: 28px; 
+    font-size: 19px; 
   }
 
   .ref-container {
