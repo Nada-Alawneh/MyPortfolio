@@ -6,7 +6,7 @@ body {
 .hero-section{
 display:flex; 
 align-items:center;
-justify-content:space-around;  
+justify-content:space-between;  
 color:#fff;
 padding:50px;
 }
@@ -214,7 +214,7 @@ transform: scale(0.9);
 
 /* Skills */
 .Skills {
-  text-align: center;
+  text-align: left;
   padding: 100px;
 }
 
@@ -224,6 +224,7 @@ transform: scale(0.9);
   background: linear-gradient(90deg, #542c03, #dca46d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 .skills-container {
@@ -252,6 +253,7 @@ transform: scale(0.9);
 .skill-card ul {
   list-style-type: none;
   padding-left: 20px;
+  justify-self: center;
 }
 
 /* Projects Section */
@@ -1033,47 +1035,52 @@ text-align: center;
   }
 
   /* projects section */
-  .Projects h1 {
-    font-size: 36px; 
-  }
-
-  .projects-container {
-    justify-content: center;
-    gap: 25px;
-  }
-
-  .project-card {
-    width: 45%; 
-    font-size: 15px;
-    padding: 20px;
-    border-radius: 25px;
-    text-align: center; 
-  }
-
-  .project-card h3 {
-    font-size: 20px;
-    margin: 10px 0;
-  }
-
-  .project-card p {
-    font-size: 15px;
-    line-height: 1.6;
-    padding: 0 15px;
-  }
-
- .carousel-inner img {
-  width: 100%;          
-  height: 220px;        
-  border-radius: 25px;  
-  object-fit: cover;    
+.Projects h1 {
+  font-size: 36px; 
 }
 
- 
+.projects-container {
+  justify-content: center;
+  gap: 25px;
+}
 
-  .project-btn {
-    padding: 12px 18px;
-    font-size: 15px;
-  }
+.project-card {
+  width: 45%; 
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center; 
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(166,124,82,0.3);
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.project-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 0 15px;
+}
+
+.carousel-inner img {
+  width: 100%;          
+  height: 220px;            
+  display: block;
+}
+
+
+.project-btn {
+  padding: 12px 18px;
+  font-size: 15px;
+}
+
 
   /* References section */
   .References h1 {
